@@ -77,6 +77,36 @@
             bottom: 0;
             width: 100%;
         }
+	    }
+    .before-after {
+        margin-top: 2rem;
+    }
+    .image-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .image-container {
+        text-align: center;
+        width: 48%; 
+    }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .image-container p {
+        margin: 0.5rem 0 0;
+        font-size: 0.9rem;
+        color: #333;
+    }
+    @media (max-width: 600px) {
+        .image-container {
+            width: 100%; 
+            margin-bottom: 1rem;
+        }
+    }
     </style>
 </head>
 <body>
@@ -135,7 +165,30 @@
                 <td>Coming Soon!</td>
             </tr>
         </table>
-    </section>
+    <div class="before-after">
+        <h3>Before & After</h3>
+        <div class="image-row">
+            <div class="image-container">
+                <img src="outside-before.jpg" alt="Outside Before Cleaning">
+                <p>Before (Outside)</p>
+            </div>
+            <div class="image-container">
+                <img src="outside-after.jpg" alt="Outside After Cleaning">
+                <p>After (Outside)</p>
+            </div>
+        </div>
+        <div class="image-row">
+            <div class="image-container">
+                <img src="inside-before.jpg" alt="Inside Before Cleaning">
+                <p>Before (Inside)</p>
+            </div>
+            <div class="image-container">
+                <img src="inside-after.jpg" alt="Inside After Cleaning">
+                <p>After (Inside)</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact">
